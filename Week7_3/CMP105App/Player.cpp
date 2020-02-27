@@ -2,6 +2,7 @@
 
 Player::Player()
 {
+	bullet = new Bullet;
 	setPosition(200, 200);
 	setSize(sf::Vector2f(100, 100));
 }
@@ -29,5 +30,5 @@ void Player::handleInput(float dt)
 
 void Player::update(float dt) 
 {
-	bullet->update(dt);
+ 	bullet->update(dt);
 }

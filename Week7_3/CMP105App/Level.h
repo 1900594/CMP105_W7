@@ -8,6 +8,7 @@
 
 
 
+
 class Level{
 public:
 	Level(sf::RenderWindow* hwnd, Input* in);
@@ -25,6 +26,6 @@ private:
 	// Default variables for level class.
 	sf::RenderWindow* window;
 	Input* input;
-
+	//Bullet bullet;
 	Player player;
 };
