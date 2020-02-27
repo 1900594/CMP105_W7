@@ -6,6 +6,8 @@ Level::Level(sf::RenderWindow* hwnd, Input* in)
 	input = in;
 
 	// initialise game objects
+	
+
 	player.setInput(input);
 }
 
@@ -31,8 +33,9 @@ void Level::render()
 {
 	beginDraw();
 	window->draw(player);
-	if(player.fired())
-		window->draw(*player.getBullet());
+	if (player.fired()) {
+		///window->draw(*player.getBullet());
+	}
 	endDraw();
 }
 
